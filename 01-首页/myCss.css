@@ -1,0 +1,258 @@
+*{
+    margin:0;
+    padding:0;
+    color:#555;
+}
+/*整个容器的样式*/
+.container {
+    width: 1000px;
+    margin: 20px auto;
+}
+.column{
+    background-color: #fdfcfb;
+    border:1px solid #eee;
+    /*overflow:hidden;*/
+    float:left;
+}
+/*第一个column栏目及内部元素的样式*/
+.column-1{
+    width:700px;
+    height:325px;
+    /*margin-right:16px;*/
+}
+.column-1-header{
+    height:40px;
+    width:100%;
+    /*border-bottom:solid 1px #333;*/
+}
+.column-1-left{
+    width:235px;  height:280px;
+    /*border:1px solid #456;*/
+    float:left;
+}
+.column-1-left img{
+    width:235px; height:280px;
+}
+.column-1-right{
+    float:left;
+    width:455px;  height:320px;
+    margin-left:5px;
+    position:relative;
+    top:-40px;
+}
+.column-1-right-top{
+    width:455px;  height:80px;
+    border-bottom:1px dotted #455;
+
+    top:-40px;
+}
+.column-1-right-middle{
+    /*border:1px solid #455;*/
+    width:455px; height:110px;
+}
+.column-1-right-bottom{
+    /*border:1px solid #455;*/
+    width:455px;  height:130px;
+}
+.pic-name{float:left;height:90%}
+.column-1-right-top form {
+    line-height: 80px;
+    display: inline-block;
+}
+.column-1-right-middle ul li{
+    float: left;
+    display: block;
+    width:210px;height:20px;
+    margin:9px 5px 2px 5px;
+}
+.column-1-right-middle ul li p{
+    color: #bbaa8b;
+    font-weight:900;
+}
+.introduction{
+    margin:5px;
+    line-height: 18px;
+}
+.column-1-right-bottom ul li{
+    float:left;
+    margin:5px;
+    width:95px;height:114px;
+    border:2px solid #eee;
+    text-align:center;
+    /*CSS过渡效果，前一个参数代表应用此过渡设置的属性，后一个参数代表过渡持续的时间*/
+    transition:all 0.8s;
+    border-radius:5px;
+}
+.column-1-right-bottom ul li:hover{
+    border:2px solid #b9217e;
+
+}
+
+
+/*第二个column栏目及内部元素的样式*/
+.column-2{
+    width:280px;
+    height:325px;
+    margin-left: 15px;
+}
+.column-2-box{
+    margin:1px 2px;
+}
+.column-2-box ul li{
+    border:1px solid #fff;
+    float:left;
+    margin:3px;
+    transition:all 1.5s;
+}
+.column-2-box ul li:hover{
+    /*CSS过渡，rotate代表旋转多少度*/
+    transform:rotate(360deg);
+}
+
+/*第三个column栏目及其内部元素的样式*/
+.column-3{
+    width:700px;height:290px;
+    margin:15px 15px 0 0;
+}
+.column-3-header{
+    border-bottom:1px solid #eee;
+}
+.column-3-header img{
+    float:left;
+}
+.column-3-nav ul li{
+    float:left;
+    font-size:1.3em;
+    height:40px;
+    line-height: 40px;
+    margin-right: 33px;
+}
+.column-3-nav ul li a{
+    display:block;
+    width:100%;height:40px;
+    font-weight:500;
+    transition:all 0.3s;
+}
+.column-3-nav ul li:hover a{
+    color:#b9217e;
+    text-decoration: underline;
+}
+.column-3-left{
+    float:left;
+    width:233px;
+    margin:20px;
+    font-size: 1.3em;
+}
+.column-3-left img{
+    display: block;
+    margin-bottom:10px;
+    padding:2px;
+    border:1px solid #eee;
+}
+.column-3-right{
+    float:left;
+    width:405px;
+    margin-top:20px;
+}
+.column-3-right-title{
+    padding:0 0 15px 0;
+}
+.column-3-right-title p{
+    color:#b9217e;
+    font-size:1.5em;
+}
+.column-3-right-article p{
+    font-size:1.1em;
+    line-height:20px;
+}
+.column-3-right-list ul{
+    list-style-type: square;
+}
+.column-3-right-list ul li{
+    float:left;
+    /*设置display:block属性会令小方块消失*/
+    /*display: block;*/
+    width:160px;
+    margin:7px 40px 0 10px;
+    /*设置line-height会使得指针还未触碰文字时就变为手指，用padding属性替代*/
+    /*line-height: 34px;*/
+    padding:11px 0 11px 0;
+    border-bottom:dotted 1px #ccc;
+}
+.column-3-right-list ul li a:hover{
+    text-decoration: underline;
+}
+
+
+/*第四个column栏目及其内部元素样式*/
+.column-4{
+    margin-top:15px;
+    width:280px;height:290px;
+}
+.pic-honor{
+    width:256px;height:110px;
+    padding:2px;
+    margin:0 auto;
+    border:1px solid #eee;
+}
+.column-4-list ul{
+    display: block;
+    width:220px;
+    margin:10px auto;
+    list-style-type:square;
+}
+.column-4-list ul li{
+    line-height: 24px;
+}
+.column-4-list ul li:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.detail{
+    display: inline-block;
+}
+.detail a {
+    color: #b9217e;
+}
+
+
+.clear{
+    clear:both;
+}
+
+
+body,div,ul,li,p,h1,h2,h3,h4,h5,h6,input{
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: "微软雅黑";
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    border: none;
+}
+/*.f_defaultwidth{*/
+    /*width: 1000px;*/
+    /*margin: 0 auto;*/
+/*}*/

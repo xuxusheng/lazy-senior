@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网上挂号</title>
+    <script src="jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="myCss.css">
+    <script src="myJs.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <img src="images/banner.png"/>
+        </div>
+        <div class="pic-group">
+            <ul class="pic-group-ul">
+                <li><a href=""><img title="dn" class="pic-group-img" src="images/dn02.jpg"/></a> </li>
+                <li><a href=""><img title="qq" class="pic-group-img" src="images/qq02.jpg"/></a> </li>
+                <li><a href=""><img title="dh" class="pic-group-img" src="images/dh02.jpg"/></a> </li>
+                <li><a href=""><img title="wx" class="pic-group-img" src="images/wx02.jpg"/></a> </li>
+            </ul>
+        </div>
+        <div class="form">
+            <div class="form-header">
+                <img src="images/form-title_03.png"/>
+            </div>
+            <form>
+                <ul>
+                    <li>
+                        <span class="division">就诊姓名：<input type="text" /><span class="form-tips">（※）</span></span>
+                        <span class="division">
+                            性别：<label for="male">男</label><input type="radio" id="male"  name="sex"/>
+                                  <label for="female">女</label><input type="radio" id="female" name="sex"/>
+                        </span>
+                        <span class="division">年龄：<input type="text"/></span>
+                    </li>
+                    <li>
+                        手机号码：<input type="text"/><span class="form-tips">（※为确保收到预约信息 请务必填写手机号码）</span>
+                    </li>
+                    <li>
+                        就诊时间：<input type="text"/><span class="form-tips">（※）</span>
+                    </li>
+                    <li>
+                        预约科室：<select name="department">
+                        <option>请选择科室</option>
+                        <option value="eye">眼科</option>
+                        <option value="dental department">牙科</option>
+                        <option value="Pediatrics">儿科</option>
+                    </select>
+                    </li>
+                    <li>
+                        情况概述：<textarea></textarea>
+                    </li>
+                    <li class="btn-li">
+                        <a href="" class="btn-yuyue">
+                            <p class="btn-zh">预约挂号</p>
+                            <p class="btn-en">Make an appointment</p>
+                        </a>
+                        <a href="" class="btn-zixun">
+                            <p class="btn-zh">资讯专家</p>
+                            <p class="btn-en">Consultant expert</p>
+                        </a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

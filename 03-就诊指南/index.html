@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <title>就诊指南</title>
+    <link href="myCss.css" type="text/css" rel="stylesheet">
+    <script src="jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=rq1sZTB5G0mb7H28viqv1Ogz"></script>
+    <script src="myJs.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <div class="btn-group">
+                <a href="javascript:void(0);" id="method_map" class="btn btn-method" title="content_map">百度地图</a>
+                <a href="javascript:void(0);" id="method_bus" class="btn btn-method" title="content_bus">公交路线</a>
+                <a href="javascript:void(0);" id="method_taxi" class="btn btn-method" title="content_taxi">出租自驾</a>
+                <a href="javascript:void(0);" id="method_foreign" class="btn btn-method" title="content_foreign">外地来院</a>
+            </div>
+        </div>
+        <div class="content-box">
+            <div id="content_map" class="contentXu">
+                <div id="allmap" style="width:560px;height:400px;margin-bottom: 17px;"></div>
+                <img src="images/pic-1.png"/>
+            </div>
+            <div id="content_bus" class="contentXu">
+                <p class="title-1">公 / 交 / 来 / 院 / 路 / 线</p>
+                <p class="title-2">
+                    <span class="symbol">
+                        <img src="images/symbol.png"/>
+                    </span>
+                    东局子街道-公交站
+                    <span class="p-tips">
+                        3分钟|约200米
+                    </span>
+                </p>
+                <p class="text">乘<a class="p-a">808路</a>公交车到<a class="p-a">东局子街道</a>站下车，下车后从起点向西北方向出发，沿东昌街走100米，右转穿过马路继续向前继续沿东昌街走90米，右转进入<a class="p-a">解放东路</a>沿解放东路走10米，到达终点。</p>
+                <p class="title-2">
+                    <span class="symbol">
+                        <img src="images/symbol.png"/>
+                    </span>
+                    东局子<span class="p-tips">(世纪新村)</span>-公交站
+                    <span class="p-tips">
+                        2分钟|约130米
+                    </span>
+                </p>
+                <p class="text">乘<a class="p-a">44路、53路、54路</a>公交车到<a class="p-a">东局子(世纪新村)</a>站下车，下车后从起点向西南方向出发，沿G302走100米，直走进入<a class="p-a">解放东路</a>沿解放东路走60米，到达终点。</p>
+                <p class="title-2">
+                    <span class="symbol">
+                        <img src="images/symbol.png"/>
+                    </span>
+                    市图书馆-公交站
+                    <span class="p-tips">
+                        4分钟|约280米
+                    </span>
+                </p>
+                <div class="MM">
+                    <img src="images/MM.png"/>
+                </div>
+                <a href="javascript:void(0);" class="btn" id="btn-2">
+                    <p>我坐哪趟公交</p>
+                    <p>点击问问专家</p>
+                </a>
+            </div>
+            <!-- 出租车自驾-->
+            <div id="content_taxi" class="contentXu">
+                <p class="title-1">出 / 租 / 车 / 自 / 驾 / 来 / 院</p>
+                <p class="title-2">
+                    <span class="symbol">
+                        <img src="images/symbol.png"/>
+                    </span>
+                    出租车：
+                </p>
+                <p class="text">
+                    您可以跟司机说，您去吉林市凤凰妇产医院，位于<a class="p-a">吉林省吉林市解放东路76号，与东昌街交汇处</a>（市图书馆斜对面）。
+                </p>
+                <p class="title-2">
+                    <span class="symbol">
+                        <img src="images/symbol.png"/>
+                    </span>
+                    自&nbsp &nbsp驾：
+                </p>
+                <p class="text">
+                    <span class="title-3">方案一：</span>自驾至解放东路在与东昌街交汇处(市图书馆对面)即到。
+                </p>
+                <p class="text">
+                    <span class="title-3">方案二：</span>自驾行驶到东昌街，调头进入解放东路然后再沿解放东路行驶10米即到。
+                </p>
+                <div class="text-box">
+                    <p>经患者反应，我们发现近期有不少出租车司机做医托赚外快的情况，这些司机以不知道医院地址为托词，在不经患者允许的情况下，将患者送到其他医院就诊，严重损坏患者利益。若司机告知不清楚地址，您告诉他到<a class="p-a">【市图书馆对面】</a>或<a class="p-a">【昌邑区公安局分局】</a>即可。</p>
+                </div>
+                <div class="MM">
+                    <img src="images/MM.png"/>
+                </div>
+                <div class="tishi">
+                    <img src="images/tishi.png"/>
+                </div>
+                <a href="javascript:void(0);" class="btn" id="btn-3">
+                    <p style="text-indent:1em;">点击在线专家</p>
+                    <p>获取更多自驾路线</p>
+                </a>
+
+
+
+
+            </div>
+            <!-- 外地来院-->
+            <div id="content_foreign" class="contentXu">
+                <div class="foreign-top">
+                    <p class="title-1">外 / 地 / 来 / 院 / 路 / 线</p>
+                    <img src="images/foreign.png"/>
+                    <a href="javascript:void(0);" class="btn" id="btn-4">
+                        <p style="text-indent:1em;">点击获取</p>
+                        <p>更便捷的路线</p>
+                    </a>
+                    <span>
+                        <img src="images/phone.png"/>
+                    </span>
+                    <p class="phone">
+                        0432-6466-9895<br/>365天,24小时只要您需要,我们就在！网络预约无需排队
+                    </p>
+                </div>
+                <div class="foreign-bottom">
+                    <form class="yuyue">
+                        <p class="form-title">快速预约挂号系统</p>
+                        姓&nbsp&nbsp名:<input type="text" value="请输入您的真实姓名" style="position:relative;left: 12px;"/><br/>
+                        手机号码:<input type="text" value="请输入常用手机号码"/><br/>
+                        就诊时间:<input type="radio" name="time" value="today"/>今天
+                        <input type="radio" name="time" value="tomorrow"/>明天
+                        <input type="radio" name="time" value="the day after tomorrow"/>后天
+                        <input type="radio" name="time" vlaue="week"/>一周内
+                    </form>
+                    <div class="MM">
+                        <img src="images/MM.png"/>
+                    </div>
+                    <a class="foreign-submit">提交</a>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="inform">
+            <div class="inform-title">
+                <p>
+                    <span>
+                        <img src="images/symbol-1.png"/>
+                    </span>
+                    医院信息
+                </p>
+            </div>
+            <p class="p-inform">
+                <span><img src="images/symbol-2.png"/></span>
+                门诊时间：早8:30-晚21:00（节假日不休）
+            </p>
+            <p class="p-inform">
+                <span><img src="images/symbol-3.png"/></span>
+                医院地址：吉林省吉林市解放东路76号，与东昌街交汇处（市图书馆斜对面）
+            </p>
+            <p class="p-inform">
+                <span><img src="images/symbol-4.png"/></span>
+                咨询热线：0432-64669895
+            </p>
+            <p class="p-inform">
+                <span><img src="images/symbol-5.png"/></span>
+                咨询QQ：80004311
+            </p>
+        </div>
+    </div>
+    <script src="map.js"></script>
+</body>
+</html>
